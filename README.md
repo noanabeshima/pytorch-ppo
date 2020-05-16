@@ -1,7 +1,6 @@
 Run `python train.py` to start training. In terminal, run `tensorboard --logdir=./runs/` to track your agent's progress
 
-Todo:
-
+Todo:  
 * Upgrade and adjust PPO to solve all classic control and Box2D [OpenAI Gym](https://gym.openai.com) environments.  
 * Solve Atari RAM environments.  
 * Solve Atari vision environments.  
