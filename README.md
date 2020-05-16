@@ -8,6 +8,7 @@ Todo:
 
 
 Resources that may be helpful for you:  
+
 [David Silver's lectures](https://www.davidsilver.uk/teaching/)  
 [Proximal Policy Optimization](https://arxiv.org/pdf/1707.06347.pdf).  
 [Implementation Matters in Deep Policy Gradients](https://openreview.net/pdf?id=r1etN1rtPB)  
