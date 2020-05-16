@@ -71,7 +71,7 @@ for ep in range(10000):
         new_state, reward, done, _ = env.step(action)
         new_state = tensor(new_state)
 
-        v += reward
+        ep_return += reward
         # reward = reward_normalizer.transform_reward(reward)
         
         transition = Transition(state = state, policy = policy,
@@ -84,8 +84,8 @@ for ep in range(10000):
         if done:
             replay_memory.append(trajectory)
             if ep % 5 == 0:
-                writer.add_scalar('episode_return/timestep', int(v), int(global_t))
-                writer.add_scalar('episode_return/episode', int(v), int(ep))
+                writer.add_scalar('episode_return/timestep', int(ep_return), int(global_t))
+                writer.add_scalar('episode_return/episode', int(ep_return), int(ep))
             break
 
         global_t += 1
